@@ -234,8 +234,8 @@ class _FilesystemPickerState extends State<FilesystemPicker> {
           ? Center(child: CircularProgressIndicator())
           : (permissionAllowed
               ? FilesystemList(
-                  isRoot: (directory.absolute.path ==
-                      widget.rootDirectory.absolute.path),
+                  isRoot: (directory.path ==
+                      widget.rootDirectory.path),
                   rootDirectory: directory,
                   fsType: widget.fsType,
                   folderIconColor: widget.folderIconColor,
