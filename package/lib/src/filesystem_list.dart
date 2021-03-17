@@ -60,9 +60,9 @@ class FilesystemList extends StatelessWidget {
         final li = this.rootDirectory.path.split(Platform.pathSeparator)
           ..removeLast();
         if(li.join(Platform.pathSeparator).compareTo(rootDirectory.path)==0)
-          this.isRoot = true;
+          isRoot = true;
         else
-          this.isRoot = false;
+          isRoot = false;
         onChange(Directory(li.join(Platform.pathSeparator)));
       },
     );
